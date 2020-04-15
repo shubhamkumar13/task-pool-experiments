@@ -1,14 +1,19 @@
 (executable
-	(name simple_matrix_mult)
-	(modules simple_matrix_mult)
+	(name naive_mat_mul)
+	(modules naive_mat_mul)
 	(libraries domainslib))
 
 (executable
-	(name simple_matrix_mult_2)
-	(modules simple_matrix_mult_2)
+	(name strassen_mat_mul)
+	(modules strassen_mat_mul)
 	(libraries domainslib))
 
 (executable
-	(name simple_matrix_mult_3)
-	(modules simple_matrix_mult_3)
+	(name canon_mat_mul)
+	(modules canon_mat_mul)
+	(libraries domainslib))
+
+(executable
+	(name para_mat_mul)
+	(modules para_mat_mul)
 	(libraries domainslib))

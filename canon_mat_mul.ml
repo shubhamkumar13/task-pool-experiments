@@ -21,6 +21,16 @@ module T = Domainslib.Task
 let pool = T.setup_pool ~num_domains:4
 let size = try Sys.argv.(1) with _ -> 1024
 
+let pe = fun i j ->
+    let k = (i + j) % size in
+    let a = m1.(i).(k) in
+    let b = m2.(k).(j) in
+    c.(i).(k) <- 0;
+    for i = 0 to pred N do
+        c.(i).(j) <- c.(i).(j) + (a * b);
+        let 
+
+
 let _ =
     let m1 = Array.init size (fun _ -> 
                 (Array.init size (fun _ -> Random.int 100))) and
