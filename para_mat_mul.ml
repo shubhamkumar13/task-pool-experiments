@@ -1,7 +1,7 @@
 module T = Domainslib.Task
 
-let num_domains = try Sys.argv.(2) |> int_of_string with _ -> 4
-let size = try Sys.argv.(1) |> int_of_string with _ -> 1024
+let num_domains = try Sys.argv.(1) |> int_of_string with _ -> 4
+let size = try Sys.argv.(2) |> int_of_string with _ -> 1024
 let ts=64
 let domain_pool = T.setup_pool ~num_domains:num_domains
 let chunks = Array.init (num_domains - 1) (fun x -> x)
