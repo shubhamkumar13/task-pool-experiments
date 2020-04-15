@@ -1,0 +1,14 @@
+(executable
+	(name simple_matrix_mult)
+	(modules simple_matrix_mult)
+	(libraries domainslib))
+
+(executable
+	(name simple_matrix_mult_2)
+	(modules simple_matrix_mult_2)
+	(libraries domainslib))
+
+(executable
+	(name simple_matrix_mult_3)
+	(modules simple_matrix_mult_3)
+	(libraries domainslib))
