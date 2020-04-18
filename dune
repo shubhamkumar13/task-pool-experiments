@@ -17,3 +17,8 @@
 	(name para_mat_mul)
 	(modules para_mat_mul)
 	(libraries domainslib))
+
+(executable
+	(name mergesort_parallel)
+	(modules mergesort_parallel)
+	(libraries domainslib))
