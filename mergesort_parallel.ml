@@ -85,7 +85,8 @@ let main () =
         List.map (fun l -> T.await domain_pool l) |>
         msort |>
         List.fold_left (fun acc x -> acc @ x) [] in
-    List.iter (fun e -> Printf.printf " %d " e) lst;
-    print_endline ""
+    (* List.iter (fun e -> Printf.printf " %d " e) lst;
+    print_endline "" *)
+        ()
 
 let _ = main ()
