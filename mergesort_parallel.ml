@@ -80,7 +80,7 @@ let main () =
     (* List.iter (fun el ->
         List.iter (fun x -> Printf.printf " %d " x) el;
         print_endline ""; ) new_lst *)
-    let lst =
+    let _lst =
         List.map (fun l -> T.async domain_pool (fun _ -> msort l)) lst |>
         List.map (fun l -> T.await domain_pool l) |>
         msort |>
