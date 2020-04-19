@@ -1,0 +1,50 @@
+mergesort
+    time _build/default/mergesort_parallel.exe 160000 4
+
+
+    real	0m32.725s
+    user	0m37.739s
+    sys	0m0.016s
+
+    atul@godel:~/shubham/task-pool-experiments$ 
+    atul@godel:~/shubham/task-pool-experiments$ time _build/default/mergesort_parallel.exe 160000 8
+
+    real	0m33.108s
+    user	0m39.249s
+    sys	0m0.024s
+
+    atul@godel:~/shubham/task-pool-experiments$ time _build/default/mergesort_parallel.exe 160000 2
+
+    real	0m31.122s
+    user	0m31.340s
+    sys	0m0.048s
+
+matrix_multiplication
+    atul@godel:~/shubham/task-pool-experiments$ time _build/default/para_mat_mul.exe 1
+
+    real	0m8.976s
+    user	0m8.952s
+    sys	0m0.024s
+    atul@godel:~/shubham/task-pool-experiments$ dune build para_mat_mul.exe
+    atul@godel:~/shubham/task-pool-experiments$ 
+    atul@godel:~/shubham/task-pool-experiments$ 
+    atul@godel:~/shubham/task-pool-experiments$ 
+    atul@godel:~/shubham/task-pool-experiments$ 
+    atul@godel:~/shubham/task-pool-experiments$ _build/default/para_mat_mul.exe 2
+    atul@godel:~/shubham/task-pool-experiments$ time _build/default/para_mat_mul.exe 2
+
+    real	0m4.580s
+    user	0m9.022s
+    sys	0m0.032s
+    atul@godel:~/shubham/task-pool-experiments$ time _build/default/para_mat_mul.exe 4
+
+    real	0m2.795s
+    user	0m10.810s
+    sys	0m0.044s
+    atul@godel:~/shubham/task-pool-experiments$ time _build/default/para_mat_mul.exe 8
+
+    real	0m4.421s
+    user	0m17.256s
+    sys	0m0.016s
+    atul@godel:~/shubham/task-pool-experiments$ 
+
